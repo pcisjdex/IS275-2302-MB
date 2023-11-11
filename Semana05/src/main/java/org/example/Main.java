@@ -10,5 +10,12 @@ public class Main {
         tienda.addCliente(new Cliente("Luis"));
         System.out.println(tienda.getNumClientes());
 
+
+        Silla silla = new Silla();
+        silla.agregarPata("Negro",10f);
+        silla.agregarPata("Negro",10f);
+        silla.agregarPata("Negro",10f);
+        silla.agregarPata("Negro",10f);
+        System.out.println(silla.getNumPatas());
         }
     }
