@@ -5,7 +5,8 @@ public class Tienda {
     private Cliente[] clientes = new Cliente[3];
     private int numClientes=0;
 
-
+    public Tienda() {
+    }
 
     //Preguntas:
     //a. Obtener la cantidad de clientes.
