@@ -10,6 +10,14 @@ public class Tienda {
     //Preguntas:
     //a. Obtener la cantidad de clientes.
     public void addCliente(Cliente cliente) {
-        
+        clientes[numClientes] = cliente;
+        this.numClientes++;
+        //this.numClientes = this.numClientes + 1;
+    }
+
+    //Obtener el numero de clietne
+
+    public int getNumClientes() {
+        return numClientes;
     }
 }
