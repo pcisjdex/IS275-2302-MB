@@ -8,7 +8,7 @@ public class Main {
         tienda.addCliente(new Cliente("Jymmy"));
         tienda.addCliente(new Cliente("Jaime"));
         tienda.addCliente(new Cliente("Luis"));
-        
+        System.out.println(tienda.getNumClientes());
 
         }
     }
