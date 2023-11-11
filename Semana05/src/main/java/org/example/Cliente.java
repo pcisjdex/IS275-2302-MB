@@ -6,5 +6,5 @@ public class Cliente {
     public Cliente(String nombreCliente) {
         this.nombreCliente = nombreCliente;
     }
-    
+
 }
