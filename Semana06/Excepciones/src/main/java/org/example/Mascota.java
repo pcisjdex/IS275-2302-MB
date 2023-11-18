@@ -23,4 +23,17 @@ public class Mascota {
     public int getEdad() {
         return edad;
     }
+
+    public Historial getHistorial() {
+        return historial;
+    }
+
+    //Asingar Historial
+    public void asignarHistorial(Historial historial) {
+        this.historial = historial;
+    }
+
+    public String obtenerPrioridad() {
+        //
+    }
 }
