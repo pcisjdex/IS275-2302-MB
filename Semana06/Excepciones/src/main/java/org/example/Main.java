@@ -4,7 +4,12 @@ package org.example;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        Persona objPer1 = new Persona("Luis",30);
-        
+        try {
+            Persona objPer1 = new Persona("Luis",30);
+            Persona objPer2 = new Persona("Marcos",-1);
+        } catch (EdadInvalidaException e) {
+            System.out.println(e.getMessage());
+        }
+
     }
 }
