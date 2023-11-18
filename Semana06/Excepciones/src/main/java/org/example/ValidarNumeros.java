@@ -8,14 +8,19 @@ public class ValidarNumeros {
     //Crear un programa que me permita validar numeros
         Scanner scanner = new Scanner(System.in);
 
-        try {
-            System.out.println("Ingresar un numero");
-            int input  = scanner.nextInt();
-            System.out.println("Numero ingresado es: " + input);
+       while(true)
+       {
+           try {
+               System.out.println("Ingresar un numero");
+               int input  = scanner.nextInt();
+               System.out.println("Numero ingresado es: " + input);
+                break;
+           } catch (InputMismatchException ex) {
+               System.out.println("Haz ingresado una letra o un valor diferente  a un numero");
+               scanner.next();
+           }
+       }
 
-        } catch (InputMismatchException ex) {
-            System.out.println("Haz ingresado una letra o un valor diferente  a un numero");
-        }
 
     }
 }
