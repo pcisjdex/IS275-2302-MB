@@ -34,4 +34,13 @@ public class Visita {
     public void setCosto(double costo) {
         this.costo = costo;
     }
+
+    @Override
+    public String toString() {
+        return "Visita{" +
+                "fecha='" + fecha + '\'' +
+                ", motivo='" + motivo + '\'' +
+                ", costo=" + costo +
+                '}';
+    }
 }
