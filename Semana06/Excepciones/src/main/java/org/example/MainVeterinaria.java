@@ -9,7 +9,7 @@ public class MainVeterinaria {
      clinicaA.registrarMascota("1234","Felix1",2);
      clinicaA.registrarMascota("1235","Felix2",3);
      clinicaA.registrarMascota("1236","Felix3",4);
-     clinicaA.registrarMascota("1237","Felix4",5);
+   //  clinicaA.registrarMascota("1237","Felix4",5);
 
      Historial historialA = new Historial("H01");
      historialA.registrarVisita("16/11/23","control",700);
