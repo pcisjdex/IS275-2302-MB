@@ -35,5 +35,13 @@ public class Mascota {
 
     public String obtenerPrioridad() {
         //
+        if (historial.calcularMontoTotal()>3000) {
+            return "Alta";
+        } else if (historial.calcularMontoTotal()>=1000 && historial.calcularMontoTotal()<=3000) {
+            return "Media";
+        } else if (historial.calcularMontoTotal()<1000) {
+            return "Baja";
+        }
+        return null;
     }
 }
