@@ -44,4 +44,15 @@ public class Mascota {
         }
         return null;
     }
+
+    @Override
+    public String toString() {
+        return "Mascota{" +
+                "documento='" + documento + '\'' +
+                ", nombres='" + nombres + '\'' +
+                ", edad=" + edad +
+                ", historial=" + historial +
+                "prioridad = " + obtenerPrioridad() +
+                '}';
+    }
 }

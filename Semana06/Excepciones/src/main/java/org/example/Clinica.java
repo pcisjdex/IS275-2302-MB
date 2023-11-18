@@ -16,4 +16,24 @@ public class Clinica {
         Mascota mascota = new Mascota(documento, nombres, edad);
         this.mascotas.add(mascota);
     }
+
+    //Buscar a la mascota
+    public Mascota buscarMascota(String documento) {
+        for (Mascota mascota : mascotas) {
+            if (mascota.getDocumento().equals(documento)) {
+                return mascota;
+            }
+        }
+        return null;
+    }
+
+    //Asignar Hitorial
+    public void asignarHistorial(String documento, Historial historial) {
+        Mascota mascota = buscarMascota(documento);
+        if (mascota !=null) {
+
+            mascota.asignarHistorial(historial);
+        }
+    }
+
 }
