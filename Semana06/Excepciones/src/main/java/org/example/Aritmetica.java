@@ -14,7 +14,8 @@ public class Aritmetica {
 
         } catch (ArithmeticException ex) {
             //Controlando
-            System.out.println("El denominador debe ser diferente de cero");
+            //System.out.println("El denominador debe ser diferente de cero");
+            division = 2;
         }
         System.out.println(division);
 
