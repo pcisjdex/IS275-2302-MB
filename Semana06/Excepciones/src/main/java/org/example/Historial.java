@@ -17,7 +17,7 @@ public class Historial {
     }
 
     //REgistrar la visita en hitorial
-    private void registrarVisita(String fecha, String motivo, double costo) {
+    public void registrarVisita(String fecha, String motivo, double costo) {
         Visita visita  = new Visita(fecha,motivo,costo);
         this.visitas.add(visita);
     }

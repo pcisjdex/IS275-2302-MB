@@ -36,4 +36,11 @@ public class Clinica {
         }
     }
 
+    public List<Mascota> getMascotas() {
+        return mascotas;
+    }
+
+    public void setMascotas(List<Mascota> mascotas) {
+        this.mascotas = mascotas;
+    }
 }
