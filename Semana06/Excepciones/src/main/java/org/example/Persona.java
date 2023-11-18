@@ -9,7 +9,7 @@ public class Persona {
                 if (edad<0) {
                     throw new EdadInvalidaException("La edad no puede ser negativa");
                 }
-                
+
         this.nombre = nombre;
         this.edad = edad;
     }
