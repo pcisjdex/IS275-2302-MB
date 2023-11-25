@@ -19,4 +19,14 @@ public class Pelicula {
     public void agregarActor(Actor actor) {
         this.listaActores.add(actor);
     }
+
+    @Override
+    public String toString() {
+        return "Pelicula{" +
+                "codigo=" + codigo +
+                ", nombre='" + nombre + '\'' +
+                ", categoria=" + categoria +
+                ", listaActores=" + listaActores +
+                '}';
+    }
 }
