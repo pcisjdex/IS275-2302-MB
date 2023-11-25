@@ -11,7 +11,8 @@ public class Categoria {
        // List<String>
         List<String> listaValores = Arrays.asList("Terror","Suspenso","Accion","Comedia","Animacion");
         if (!listaValores.contains(nombre)) {
-            throw new RuntimeException("La categoria " + nombre + "no es valida");
+            throw new RuntimeException("La categoria " + nombre + " no es valida");
+           // throw new Exception("hola");
         }
         this.codigo = codigo;
         this.nombre = nombre;
