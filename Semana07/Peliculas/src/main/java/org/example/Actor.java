@@ -9,6 +9,10 @@ public class Actor {
         this.nacionalodad = nacionalodad;
     }
 
+    public String getNacionalodad() {
+        return nacionalodad;
+    }
+
     @Override
     public String toString() {
         return "Actor{" +
