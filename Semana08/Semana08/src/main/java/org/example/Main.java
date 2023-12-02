@@ -1,6 +1,8 @@
 package org.example;
 
 import org.controller.Conexion;
+import org.controller.FactoriaFacturas;
+import org.controller.Factura;
 import org.controller.SoyUnico;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
@@ -21,6 +23,12 @@ public class Main {
         cn.setHost("192.168.2.1");
         System.out.println(cn.getHost());
 
+        //Para trabajar Factory Method
+
+        Factura objFactura = FactoriaFacturas.getFactura("igvs");
+        objFactura.setId(1);
+        objFactura.setImporte(100);
+        System.out.println(objFactura.getImporteIgv());
 
 
 
