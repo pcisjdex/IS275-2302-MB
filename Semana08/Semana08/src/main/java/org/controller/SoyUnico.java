@@ -17,7 +17,18 @@ public class SoyUnico {
         SoyUnico.soyUnico = soyUnico;
     }
 
-    public SoyUnico(String nombre) {
+    //Constructor privado
+    private SoyUnico(String nombre) {
         this.nombre = nombre;
+        System.out.println("Mi nombre es: " + this.nombre);
+    }
+
+    public static SoyUnico getSingletonInstance(String nombre) {
+            if (soyUnico==null) {
+                soyUnico = new SoyUnico(nombre);
+            } else {
+                System.out.println("No se puede crear el objeto" + nombre + "Por que ya existe la clase");
+            }
+        return soyUnico;
     }
 }

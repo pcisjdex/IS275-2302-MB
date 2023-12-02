@@ -6,7 +6,7 @@ import org.controller.SoyUnico;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        SoyUnico soy = new SoyUnico("Luis");
+        //SoyUnico soy = new SoyUnico("Luis");
 
     }
 }
