@@ -7,6 +7,11 @@ import org.controller.SoyUnico;
 public class Main {
     public static void main(String[] args) {
         //SoyUnico soy = new SoyUnico("Luis");
+        SoyUnico manuel  = SoyUnico.getSingletonInstance("Manuel");
+        SoyUnico ramon  = SoyUnico.getSingletonInstance("Ramon");
+
+        System.out.println(manuel.getNombre());
+        System.out.println(ramon.getNombre());
 
     }
 }
